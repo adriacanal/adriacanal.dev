@@ -8,4 +8,12 @@ export default ({ command }) => ({
             input: 'resources/js/app.js',
         },
     },
+    css: {
+        postCss: {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+            },
+        },
+    },
 });
