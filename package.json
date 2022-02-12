@@ -5,6 +5,9 @@
         "production": "vite build"
     },
     "devDependencies": {
+        "@tailwindcss/forms": "^0.4.0",
+        "@tailwindcss/typography": "^0.5.1",
+        "alpinejs": "^3.9.0",
         "autoprefixer": "^10.4.2",
         "axios": "^0.25",
         "lodash": "^4.17.19",
