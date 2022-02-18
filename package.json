@@ -1,4 +1,8 @@
 {
+    "name": "adriacanal.dev",
+    "description": "Source code of adriacanal.dev",
+    "keywords": ["framework", "laravel", "adriacanal", "tailwind", "alpinejs", "livewire", "vite"],
+    "license": "MIT",
     "private": true,
     "scripts": {
         "dev": "vite",
