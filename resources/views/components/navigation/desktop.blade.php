@@ -6,7 +6,7 @@
     <a href="{{-- route('page', 'uses') --}}" class="text-base font-medium text-gray-500 hover:text-green-500">
         Uses
     </a>
-    <a href="{{-- route('contact') --}}" class="text-base font-medium text-gray-500 hover:text-green-500">
+    <a href="{{ route('contact') }}" class="text-base font-medium text-gray-500 hover:text-green-500">
         Contact
     </a>
 </nav>
