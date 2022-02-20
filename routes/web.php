@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Contact;
+use App\Http\Livewire\Page;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Home::class, '__invoke'])->name('home');
 Route::get('/contact', [Contact::class, '__invoke'])->name('contact');
+Route::get('/{slug}', [Page::class, '__invoke'])->name('page');
