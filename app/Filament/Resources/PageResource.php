@@ -5,11 +5,13 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PageResource\Pages;
 use App\Filament\Resources\PageResource\RelationManagers;
 use App\Models\Page;
+use Closure;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Illuminate\Support\Str;
 
 class PageResource extends Resource
 {
@@ -19,19 +21,38 @@ class PageResource extends Resource
 
     public static function form(Form $form): Form
     {
+        $defaultMeta = [
+            'meta_description' => '',
+            'opengraph_title' => '',
+            'opengraph_description' => '',
+            'opengraph_image' => '',
+            'opengraph_image_width' => '',
+            'opengraph_image_height' => '',
+            'twitter_title' => '',
+            'twitter_description' => '',
+            'twitter_image' => '',
+        ];
+
         return $form
             ->schema([
-                Forms\Components\TextInput::make('slug')->required()->unique(),
-                Forms\Components\TextInput::make('title')->required(),
-                Forms\Components\Textarea::make('body'),
-            ]);
+                Forms\Components\TextInput::make('title')
+                    ->required()
+                    ->reactive()
+                    ->afterStateUpdated(function (Closure $set, $state) {
+                        $set('slug', Str::slug($state));
+                    }),
+                Forms\Components\TextInput::make('slug')
+                    ->required()
+                    ->unique(ignorable: fn (?Page $record): ?Page => $record),
+                Forms\Components\RichEditor::make('body')->required(),
+                Forms\Components\KeyValue::make('meta')->default($defaultMeta)
+            ])->columns(1);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('slug'),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
             ])
             ->filters([]);
