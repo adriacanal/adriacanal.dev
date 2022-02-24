@@ -10,7 +10,7 @@ class Page extends Model
 
     protected $casts = [
         'body' => 'string',
-        'meta' => 'array',
+        'meta_description' => 'string',
     ];
 
     public function getContentAttribute()

@@ -21,18 +21,6 @@ class PageResource extends Resource
 
     public static function form(Form $form): Form
     {
-        $defaultMeta = [
-            'meta_description' => '',
-            'opengraph_title' => '',
-            'opengraph_description' => '',
-            'opengraph_image' => '',
-            'opengraph_image_width' => '',
-            'opengraph_image_height' => '',
-            'twitter_title' => '',
-            'twitter_description' => '',
-            'twitter_image' => '',
-        ];
-
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')
@@ -44,8 +32,11 @@ class PageResource extends Resource
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->unique(ignorable: fn (?Page $record): ?Page => $record),
-                Forms\Components\RichEditor::make('body')->required(),
-                Forms\Components\KeyValue::make('meta')->default($defaultMeta)
+                Forms\Components\Textarea::make('meta_description')
+                    ->maxLength(160)
+                    ->rows(3),
+                Forms\Components\RichEditor::make('body')
+                    ->required()
             ])->columns(1);
     }
 

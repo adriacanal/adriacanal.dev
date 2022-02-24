@@ -1,7 +1,7 @@
 @slot('title', $page->title . ' - ' . config('app.name'))
 
-@if(isset($page->meta['meta_description']))
-    @slot('description', $page->meta['meta_description'])
+@if(isset($page->meta_description))
+    @slot('description', $page->meta_description)
 @endif
 
 <div class="relative py-16 bg-white overflow-hidden">
