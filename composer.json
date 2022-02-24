@@ -14,6 +14,7 @@
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
+        "sentry/sentry-laravel": "^2.11",
         "spatie/laravel-honeypot": "^4.1"
     },
     "require-dev": {
