@@ -26,11 +26,11 @@
             <p class="text-center text-base text-gray-500">
                 &copy; {{ date('Y') }} Adrià Canal
                 |
-                <a href="{{-- route('page', 'privacy-policy') --}}" class="text-base text-gray-500 hover:text-green-800">
+                <a href="{{ route('page', 'privacy-policy') }}" class="text-base text-gray-500 hover:text-green-800">
                     Privacy Policy
                 </a>
                 |
-                <a href="{{-- route('page', 'cookies') --}}" class="text-base text-gray-500 hover:text-green-800">
+                <a href="{{ route('page', 'cookies') }}" class="text-base text-gray-500 hover:text-green-800">
                     Cookies
                 </a>
             </p>
