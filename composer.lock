@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5fce433aa82272ed2cf4b67be2cef26",
+    "content-hash": "e3260e7da28eaeddf84572b8232f64a8",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -1075,6 +1075,68 @@
                 }
             ],
             "time": "2022-02-20T15:07:15+00:00"
+        },
+        {
+            "name": "gnahotelsolutions/image-cacher",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gnahotelsolutions/image-cacher.git",
+                "reference": "fdde0321ed10bf06a302206ab1beabddea2c844c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gnahotelsolutions/image-cacher/zipball/fdde0321ed10bf06a302206ab1beabddea2c844c",
+                "reference": "fdde0321ed10bf06a302206ab1beabddea2c844c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.7|^4.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "GNAHotelSolutions\\ImageCacher\\Adapters\\Laravel\\ImageCacherServiceProvider"
+                    ],
+                    "aliases": {
+                        "ImageCacher": "GNAHotelSolutions\\ImageCacher\\Adapters\\Laravel\\Facades\\ImageCacher"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GNAHotelSolutions\\ImageCacher\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Llop",
+                    "email": "dllop@gnahs.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Creates a resized or cropped version of the image in the cache directory",
+            "homepage": "https://github.com/gnahotelsolutions/image-cacher",
+            "keywords": [
+                "gnahotelsolutions",
+                "image",
+                "image-cacher",
+                "manipulation"
+            ],
+            "support": {
+                "issues": "https://github.com/gnahotelsolutions/image-cacher/issues",
+                "source": "https://github.com/gnahotelsolutions/image-cacher/tree/2.2.0"
+            },
+            "time": "2021-07-30T10:41:16+00:00"
         },
         {
             "name": "graham-campbell/result-type",

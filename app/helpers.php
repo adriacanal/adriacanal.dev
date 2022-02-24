@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\HtmlString;
+use GNAHotelSolutions\ImageCacher\Adapters\Laravel\Facades\ImageCacher;
 
 if (! function_exists('vite_assets')) {
     /**
@@ -34,5 +35,12 @@ if (! function_exists('vite_assets')) {
             <script type="module" src="/build/{$manifest['resources/js/app.js']['file']}"></script>
             <link rel="stylesheet" href="/build/{$manifest['resources/js/app.js']['css'][0]}">
         HTML);
+    }
+}
+
+if (! function_exists('image')) {
+    function image(string $name, int $width, int $height): string
+    {
+        return ImageCacher::crop($name, $width, $height)->getOriginalName();
     }
 }

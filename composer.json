@@ -8,6 +8,7 @@
         "php": "^8.0",
         "filament/filament": "^2.10",
         "fruitcake/laravel-cors": "^2.0.5",
+        "gnahotelsolutions/image-cacher": "^2.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
