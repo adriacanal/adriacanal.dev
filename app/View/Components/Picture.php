@@ -10,8 +10,8 @@ class Picture extends Component
 
     public function __construct(
         public string $name,
-        public array $sizes,
         public array $defaultSizes,
+        public array $sizes = [],
         public string $alt = '',
     ) {}
 
