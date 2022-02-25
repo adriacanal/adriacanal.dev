@@ -13,9 +13,4 @@ class Page extends Model
         'meta_description' => 'string',
     ];
 
-    public function getContentAttribute()
-    {
-        return $this->body;
-    }
-
 }
