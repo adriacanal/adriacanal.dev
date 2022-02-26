@@ -22,7 +22,6 @@ class Page extends Component
         }
 
         $data = [
-            'name' => 'home.jpeg',
             'defaultSizes' => [
                 'width' => 735,
                 'height' => 546
@@ -31,11 +30,20 @@ class Page extends Component
             'attributes' => ''
         ];
 
-        $content = preg_replace(
-            '/<figure([\w\W]+?)<\/figure>/',
-            view('components.picture', $data)->render(),
-            $page->body
-        );
+        $content = $page->body;
+
+        preg_match_all('/src\s*=\s*"(.+?)"/', $content, $images);
+        if (isset($images[0])) {
+            foreach ($images[0] as $image) {
+                $data['name'] = trim(explode('storage/', $image)[1] ?? '', '"');
+                $data['alt'] = '';
+                $content = preg_replace(
+                    '/<figure([\w\W]+?)src\s*=\s*"(.+?)' . $data['name'] . '"([\w\W]+?)<\/figure>/',
+                    view('components.picture', $data)->render(),
+                    $content
+                );
+            }
+        }
 
         $this->page = $page;
         $this->content = $content;
