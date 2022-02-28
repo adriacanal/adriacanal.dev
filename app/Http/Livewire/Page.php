@@ -32,11 +32,12 @@ class Page extends Component
 
         $content = $page->body;
 
+        preg_match_all('/<span class="attachment__name">(.+?)<\/span>/', $content, $alts);
         preg_match_all('/src\s*=\s*"(.+?)"/', $content, $images);
-        if (isset($images[0])) {
-            foreach ($images[0] as $image) {
-                $data['name'] = trim(explode('storage/', $image)[1] ?? '', '"');
-                $data['alt'] = '';
+        if (isset($images[1], $alts[1])) {
+            foreach ($images[1] as $index => $image) {
+                $data['name'] = explode('storage/', $image)[1] ?? '';
+                $data['alt'] = $alts[1][$index] ?? '';
                 $content = preg_replace(
                     '/<figure([\w\W]+?)src\s*=\s*"(.+?)' . $data['name'] . '"([\w\W]+?)<\/figure>/',
                     view('components.picture', $data)->render(),
