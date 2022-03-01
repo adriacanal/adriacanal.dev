@@ -37,7 +37,7 @@
             <div>
                 <h2 class="text-base font-semibold text-green-800 uppercase tracking-wide">Some of my skills</h2>
                 <p class="mt-2 text-3xl font-extrabold text-gray-900">As a developer</p>
-                <p class="mt-4 text-lg text-gray-500">Com a Backend developer, els llenguatges de programació, frameworks i software que faig servir més habitualment i que domino són: </p>
+                <p class="mt-4 text-lg text-gray-500">As a Backend developer, the programming languages, frameworks and software that I most use and that I master are:</p>
             </div>
             <div class="mt-12 lg:mt-0 lg:col-span-2">
                 <dl class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
