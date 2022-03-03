@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Error 404 - {{ config('app.name') }}</title>
+    <title>Error 503 - {{ config('app.name') }}</title>
 
-    <meta name="description" content="Page not found.">
+    <meta name="description" content="Page in maintenance">
 
     <link rel="canonical" href="{{ url()->current() }}" />
 
