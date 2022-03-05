@@ -26,8 +26,33 @@
                 </div>
             </div>
         </div>
-        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-            <img class="absolute inset-0 w-full h-full object-cover" src="{{ image('home.jpeg', 960, 650) }}">
+        <div class="relative w-full h-screen md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+            <x-picture
+                name="adria_canal.jpg"
+                :sizes="[
+                    '1440' => [
+                        'width' => 720,
+                        'height' => 650
+                    ],
+                    '1200' => [
+                        'width' => 600,
+                        'height' => 714
+                    ],
+                    '1024' => [
+                        'width' => 512,
+                        'height' => 714
+                    ],
+                    '768' => [
+                        'width' => 768,
+                        'height' => 384
+                    ]
+                ]"
+                :default-sizes="['width' => 720, 'height' => 650]"
+                :alt="config('web.description')"
+                class="absolute inset-0 w-full h-full object-cover"
+                width="100%"
+                height="100%"
+            />
         </div>
     </main>
 
@@ -47,23 +72,10 @@
                             <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">PHP</p>
-                        </dt>
-                        <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Al cap i a la fi, és el llenguatge de programació amb què treballo i faig els meus projectes personals des de 2015.
-                        </dd>
-                    </div>
-
-                    <div class="relative">
-                        <dt>
-                            <!-- Heroicon name: outline/check -->
-                            <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
                             <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Laravel</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            El millor Framework de PHP que existeix en l'actualitat. També l'he utilitzat des de 2015 amb la versió 4.2
+                            I have been working with the Laravel framework since 2015. It's the most PHP powerful framework. 😎
                         </dd>
                     </div>
 
@@ -73,23 +85,10 @@
                             <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Livewire</p>
+                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Eloquent</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            És relativament nou però molt potent i m'encanta! L'he posat en pràctica precisament amb aquest projecte web i també amb algun projecte de la feina.
-                        </dd>
-                    </div>
-
-                    <div class="relative">
-                        <dt>
-                            <!-- Heroicon name: outline/check -->
-                            <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">SQL</p>
-                        </dt>
-                        <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Les consultes SQL és una cosa que se m'ha donat sempre molt bé.
+                            It is the Laravel ORM and the easiest way to connect any Laravel project to the database without having to do complex SQL queries. 🔍
                         </dd>
                     </div>
 
@@ -102,7 +101,7 @@
                             <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Git</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            El dia a dia del programador web, sense Git no se que seriem. Ja sigui BitBucket o GitHub, amb o sense GUI però es vital, a ser possible a més fent ús de Git Flow
+                            Is the best VCS software unquestionably 👑 <br> I think all developers use Git either CLI or GUI.
                         </dd>
                     </div>
 
@@ -112,10 +111,49 @@
                             <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">JSON</p>
+                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Alpine JS</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Els fitxers Json ja sigui Composer, Package, o bé per enviar/rebre informació és realment útil i simple.
+                            It is simple, powerful and useful 💪🏻. It is the ultimate frontend tool for backend programmers
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Livewire</p>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">
+                            A way to develop dynamic interfaces without Vue or React knowledge ⚛️ It has been a great discovery.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">SQL</p>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">
+                            Where Eloquent does not work, SQL knowledge is required. And I've always been fascinated by databases, transactions and sub-queries, I consider myself a whole SherlockQL 🕵🏻‍♂️
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Web Performance</p>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">
+                            Every project I do I try to apply the best performance for the website and get optimal scores for the Core Web Vitals 📈 This site is proof of that.
                         </dd>
                     </div>
 
@@ -128,20 +166,7 @@
                             <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Tailwind CSS</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Framework de CSS molt interessant, miro d'aprendre ràpidament però aquest és el meu primer projecte amb Tailwind CSS 💪🏻
-                        </dd>
-                    </div>
-
-                    <div class="relative">
-                        <dt>
-                            <!-- Heroicon name: outline/check -->
-                            <svg class="absolute h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Docker</p>
-                        </dt>
-                        <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Conec alguns conceptes bàsics del Docker i també amb el projecte de la meva web hi he fet algunes proves juntament amb Laravel Sail.
+                            Similar to Alpine but with CSS. If you're not good at styling, Tailwind is a great help! 👨🏻‍🎨
                         </dd>
                     </div>
                 </dl>
