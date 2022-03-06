@@ -26,27 +26,28 @@
                 </div>
             </div>
         </div>
+        @if(file_exists(public_path('storage/adria_canal.jpg')))
         <div class="relative w-full h-screen md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
             <x-picture
                 name="adria_canal.jpg"
                 :sizes="[
-                    '1440' => [
-                        'width' => 720,
-                        'height' => 650
-                    ],
-                    '1200' => [
-                        'width' => 600,
-                        'height' => 714
-                    ],
-                    '1024' => [
-                        'width' => 512,
-                        'height' => 714
-                    ],
-                    '768' => [
-                        'width' => 768,
-                        'height' => 384
-                    ]
-                ]"
+                '1440' => [
+                    'width' => 720,
+                    'height' => 650
+                ],
+                '1200' => [
+                    'width' => 600,
+                    'height' => 714
+                ],
+                '1024' => [
+                    'width' => 512,
+                    'height' => 714
+                ],
+                '768' => [
+                    'width' => 768,
+                    'height' => 384
+                ]
+            ]"
                 :default-sizes="['width' => 720, 'height' => 650]"
                 :alt="config('web.description')"
                 class="absolute inset-0 w-full h-full object-cover"
@@ -54,6 +55,7 @@
                 height="100%"
             />
         </div>
+        @endif
     </main>
 
     {{-- FEATURE: curriculum --}}
