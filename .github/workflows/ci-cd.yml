@@ -67,9 +67,6 @@ jobs:
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
-      - name: Copy dotenv file
-        run: php -r "file_put_contents(__DIR__ . '/.env', '${{ secrets.DOT_ENV }}');"
-
       - name: Clear and cache routes
         run: php artisan route:cache
 
