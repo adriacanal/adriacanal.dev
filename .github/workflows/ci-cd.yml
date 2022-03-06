@@ -79,9 +79,6 @@ jobs:
       - name: Clear and cache views
         run: php artisan view:cache
 
-      - name: Copy dotenv file
-        run: php -r "file_put_contents(__DIR__ . '/.env', '${{ secrets.DOT_ENV }}');"
-
       - name: Deploy
         uses: AEnterprise/rsync-deploy@v1.0
         env:
