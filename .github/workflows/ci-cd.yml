@@ -88,4 +88,4 @@ jobs:
           FOLDER: "./"
           SERVER_IP: ${{ secrets.TARGET_HOST }}
           USERNAME: ${{ secrets.TARGET_USER }}
-          SERVER_DESTINATION: "/var/www"
+          SERVER_DESTINATION: "/var/www/adriacanal.dev"
