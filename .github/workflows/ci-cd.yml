@@ -67,8 +67,8 @@ jobs:
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
-      - name: Clear caches
-        run: php artisan cache:clear
+      - name: Copy dotenv file
+        run: php -r "file_put_contents(__DIR__ . '/.env', '${{ secrets.DOT_ENV }}');"
 
       - name: Clear and cache routes
         run: php artisan route:cache
@@ -78,6 +78,9 @@ jobs:
 
       - name: Clear and cache views
         run: php artisan view:cache
+
+     - name: Clear caches
+       run: php artisan cache:clear
 
       - name: Deploy
         uses: AEnterprise/rsync-deploy@v1.0
