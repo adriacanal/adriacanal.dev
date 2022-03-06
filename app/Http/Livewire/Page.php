@@ -26,8 +26,7 @@ class Page extends Component
                 'width' => 735,
                 'height' => 546
             ],
-            'alt' => 'Lorem ipsum',
-            'attributes' => ''
+            'attributes' => 'loading="lazy"'
         ];
 
         $content = $page->body;
