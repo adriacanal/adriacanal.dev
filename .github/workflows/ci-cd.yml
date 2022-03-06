@@ -79,8 +79,8 @@ jobs:
       - name: Clear and cache views
         run: php artisan view:cache
 
-     - name: Clear caches
-       run: php artisan cache:clear
+      - name: Clear caches
+        run: php artisan cache:clear
 
       - name: Deploy
         uses: AEnterprise/rsync-deploy@v1.0
