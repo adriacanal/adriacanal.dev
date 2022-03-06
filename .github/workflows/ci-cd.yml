@@ -68,16 +68,16 @@ jobs:
         run: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
       - name: Clear caches
-      - run: php artisan cache:clear
+        run: php artisan cache:clear
 
       - name: Clear and cache routes
-      - run: php artisan route:cache
+        run: php artisan route:cache
 
       - name: Clear and cache config
-      - run: php artisan config:cache
+        run: php artisan config:cache
 
       - name: Clear and cache views
-      - run: php artisan view:cache
+        run: php artisan view:cache
 
       - name: Copy dotenv file
         run: php -r "file_put_contents(__DIR__ . '/.env', '${{ secrets.DOT_ENV }}');"
