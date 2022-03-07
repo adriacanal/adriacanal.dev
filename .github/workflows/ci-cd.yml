@@ -79,6 +79,12 @@ jobs:
       - name: Clear and cache views
         run: php artisan view:cache
 
+      - name: Apply permissions
+        run: chmod -R 775 storage/
+
+      - name: Composer dump-autoload
+        run: composer dump-autoload
+
       - name: Deploy
         uses: AEnterprise/rsync-deploy@v1.0
         env:
