@@ -12,5 +12,8 @@ return [
     ],
     'contact' => [
         'mail' => env('CONTACT_MAIL', 'hello@adriacanal.dev')
+    ],
+    'tracking' => [
+        'google_tag_manager' => 'GTM-WCMH263'
     ]
 ];

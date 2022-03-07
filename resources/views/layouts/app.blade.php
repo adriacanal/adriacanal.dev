@@ -14,9 +14,17 @@
     {{ vite_assets() }}
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    @includeWhen(request()->hasCookie(config('cookie-consent.cookie_name')), 'components.cookies.analytics')
 </head>
 
 <body>
+@if(request()->hasCookie(config('cookie-consent.cookie_name')))
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config('web.tracking.google_tag_manager') }}"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+@endif
 <x-header />
 
 {!! $slot !!}
