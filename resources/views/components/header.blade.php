@@ -3,7 +3,8 @@
         <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="{{ route('home') }}">
-                    <img class="h-8 w-auto sm:h-10 inline" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">
+                    {{--TODO: Logo work in progress, disable for the moment --}}
+                    {{--<img class="h-8 w-auto sm:h-10 inline" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">--}}
                     <span class="text-2xl font-noto font-bold text-green-800 align-middle">Adrià Canal</span>
                 </a>
             </div>
@@ -28,7 +29,9 @@
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                     <div>
-                        <img class="h-8 w-auto" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">
+                        {{--TODO: Logo work in progress, disable for the moment --}}
+                        {{--<img class="h-8 w-auto" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">--}}
+                        <span class="text-2xl font-noto font-bold text-green-800 align-middle">AC</span>
                     </div>
                     <div class="-mr-2">
                         <button @click="mobileMenuOpen = false" type="button"
