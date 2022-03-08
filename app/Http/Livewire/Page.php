@@ -31,7 +31,8 @@ class Page extends Component
 
         $content = $page->body;
 
-        preg_match_all('/<span class="attachment__name">(.+?)<\/span>/', $content, $alts);
+        preg_match_all('/<figcaption class="attachment__caption attachment__caption--edited">(.+?)<\/figcaption>/', $content, $alts);
+
         preg_match_all('/src\s*=\s*"(.+?)"/', $content, $images);
         if (isset($images[1], $alts[1])) {
             foreach ($images[1] as $index => $image) {
