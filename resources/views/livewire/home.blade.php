@@ -129,7 +129,7 @@
                             <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Livewire</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            A way to develop dynamic interfaces without Vue or React knowledge ⚛️ It has been a great discovery.
+                            A way to develop dynamic interfaces without using Vue or React ⚛️ It has been a great discovery.
                         </dd>
                     </div>
 
@@ -155,7 +155,7 @@
                             <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Web Performance</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Every project I do I try to apply the best performance for the website and get optimal scores for the Core Web Vitals 📈 This site is proof of that.
+                            Every project I do I apply the best performance techniques and aim to get optimal scores for the Core Web Vitals 📈 This site is proof of that.
                         </dd>
                     </div>
 
@@ -168,7 +168,7 @@
                             <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Tailwind CSS</p>
                         </dt>
                         <dd class="mt-2 ml-9 text-base text-gray-500">
-                            Similar to Alpine but with CSS. If you're not good at styling, Tailwind is a great help! 👨🏻‍🎨
+                            Similar to Alpine but with CSS. Tailwind is a great help to style without much hassle! 👨🏻‍🎨
                         </dd>
                     </div>
                 </dl>
