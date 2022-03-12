@@ -26,7 +26,7 @@ class Page extends Component
                 'width' => 735,
                 'height' => 546
             ],
-            'attributes' => 'loading="lazy"'
+            'attributes' => 'width="735" height="546"'
         ];
 
         $content = $page->body;
@@ -38,6 +38,9 @@ class Page extends Component
             foreach ($images[1] as $index => $image) {
                 $data['name'] = explode('storage/', $image)[1] ?? '';
                 $data['alt'] = $alts[1][$index] ?? '';
+                if ($index > 0) {
+                    $data['attributes'] = 'loading="lazy" width="735" height="546"';
+                }
                 $content = preg_replace(
                     '/<figure([\w\W]+?)src\s*=\s*"(.+?)' . $data['name'] . '"([\w\W]+?)<\/figure>/',
                     view('components.picture', $data)->render(),
