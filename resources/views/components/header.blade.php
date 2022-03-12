@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="{{ route('home') }}">
+                <a href="{{ route('home') }}" title="Adrià Canal">
                     {{--TODO: Logo work in progress, disable for the moment --}}
                     {{--<img class="h-8 w-auto sm:h-10 inline" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">--}}
                     <span class="text-2xl font-noto font-bold text-green-800 align-middle">Adrià Canal</span>
