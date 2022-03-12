@@ -2,9 +2,7 @@
 
 return [
     'domain' => 'adriacanal.dev',
-    'description' => "My name is Adrià Canal and I'm Backend developer using Laravel.
-                      From Vilajuïga (Alt Empordà), Girona.
-                      I work at GNA Hotel Solutions since 2018",
+    'description' => "My name is Adrià Canal and I'm Backend developer using Laravel. From Vilajuïga (Alt Empordà), Girona. I work at GNA Hotel Solutions since 2018",
     'social' => [
         'github' => 'https://github.com/adriacanal',
         'twitter' => 'https://twitter.com/nokkerzz',
