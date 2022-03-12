@@ -29,7 +29,7 @@
                 </p>
                 <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                     <div class="rounded-md shadow">
-                        <a href="mailto:{{ config('web.contact.mail') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-800 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                        <a href="mailto:{{ config('web.contact.mail') }}" title="Contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-800 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                             Contact
                             <svg height="24" width="24" class="-mr-1 ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>

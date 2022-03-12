@@ -27,10 +27,10 @@
                     <p class="mt-1 text-base text-gray-500">Please check the URL in the address bar and try again.</p>
                 </div>
                 <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-                    <a href="{{ route('home') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-800 hover:bg-green-600">
+                    <a href="{{ route('home') }}" title="Go back home" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-800 hover:bg-green-600">
                         Go back home
                     </a>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200">
+                    <a href="{{ route('contact') }}" title="Contact" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200">
                         Contact support
                     </a>
                 </div>
