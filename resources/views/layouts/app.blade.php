@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+      x-data="{ darkMode: false }"
+      x-init="darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +21,7 @@
     @includeWhen(request()->hasCookie(config('cookie-consent.cookie_name')), 'components.cookies.analytics')
 </head>
 
-<body>
+<body :class="{ 'dark': darkMode }">
 @if(request()->hasCookie(config('cookie-consent.cookie_name')))
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config('web.tracking.google_tag_manager') }}"
