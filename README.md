@@ -1,5 +1,7 @@
 ## Welcome to the code of my site! 👋🏻 👨🏻‍💻
 
+![](https://github.com/adriacanal/adriacanal.dev/workflows/ci/cd%20workflow/badge.svg)
+
 This is the code of the site [adriacanal.dev](https://adriacanal.dev).
 
 I use TALL Stack for the site code.
