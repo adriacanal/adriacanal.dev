@@ -33,7 +33,7 @@
             </svg>
         </div>
     </div>
-    <div class="relative px-4 sm:px-6 lg:px-8">
+    <div class="px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <h1>
                 <span class="block text-base text-center text-green-800 dark:text-green-500 font-semibold tracking-wide uppercase">Updated {{ $page->updated_at->diffForHumans() }}</span>
