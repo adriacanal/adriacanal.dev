@@ -4,9 +4,9 @@
     @slot('description', $page->meta_description)
 @endif
 
-<div class="py-16 bg-white dark:bg-slate-900 overflow-hidden">
+<div class="lg:relative py-16 bg-white dark:bg-slate-900 overflow-hidden">
     <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
-        <div class="h-full text-lg max-w-prose mx-auto" aria-hidden="true">
+        <div class="lg:relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
             <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
                 <defs>
                     <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -33,7 +33,7 @@
             </svg>
         </div>
     </div>
-    <div class="px-4 sm:px-6 lg:px-8">
+    <div class="lg:relative px-4 sm:px-6 lg:px-8">
         <div class="text-lg max-w-prose mx-auto">
             <h1>
                 <span class="block text-base text-center text-green-800 dark:text-green-500 font-semibold tracking-wide uppercase">Updated {{ $page->updated_at->diffForHumans() }}</span>
