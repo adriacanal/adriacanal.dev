@@ -3,8 +3,8 @@
 namespace App\Http\Livewire;
 
 use App\Mail\ContactMail;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 class Contact extends Component
@@ -17,10 +17,10 @@ class Contact extends Component
     public function submit(): void
     {
         $this->validate([
-            'name'    => 'required',
+            'name' => 'required',
             'surname' => 'required',
-            'email'   => 'required|email',
-            'message' => 'required|min:10'
+            'email' => 'required|email',
+            'message' => 'required|min:10',
         ]);
 
         Mail::to(config('web.contact.mail'))->send(new ContactMail($this->name, $this->surname, $this->email, $this->message));

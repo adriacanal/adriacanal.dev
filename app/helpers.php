@@ -1,8 +1,8 @@
 <?php
 
+use GNAHotelSolutions\ImageCacher\Adapters\Laravel\Facades\ImageCacher;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\HtmlString;
-use GNAHotelSolutions\ImageCacher\Adapters\Laravel\Facades\ImageCacher;
 
 if (! function_exists('vite_assets')) {
     /**
@@ -14,7 +14,7 @@ if (! function_exists('vite_assets')) {
 
         if (app()->environment('local')) {
             try {
-                Http::get("http://localhost:3000");
+                Http::get('http://localhost:3000');
                 $devServerIsRunning = true;
             } catch (Exception) {
             }

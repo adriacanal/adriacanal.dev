@@ -12,5 +12,4 @@ class Page extends Model
         'body' => 'string',
         'meta_description' => 'string',
     ];
-
 }

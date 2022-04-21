@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PageResource\Pages;
-use App\Filament\Resources\PageResource\RelationManagers;
 use App\Models\Page;
 use Closure;
 use Filament\Forms;
@@ -36,7 +35,7 @@ class PageResource extends Resource
                     ->maxLength(160)
                     ->rows(3),
                 Forms\Components\RichEditor::make('body')
-                    ->required()
+                    ->required(),
             ])->columns(1);
     }
 
@@ -52,7 +51,7 @@ class PageResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+
         ];
     }
 

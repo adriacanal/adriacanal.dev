@@ -1,8 +1,7 @@
 <?php
 
-use App\Http\Controllers\CookieConsentController;
-use App\Http\Livewire\Home;
 use App\Http\Livewire\Contact;
+use App\Http\Livewire\Home;
 use App\Http\Livewire\Page;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('cookies-warning/accept', 'CookiesWarningController@accept')->name('cookies-warning.accept');
+Route::get('cookies-warning/accept', 'CookiesWarningController@accept')
+    ->name('cookies-warning.accept');
 
 Route::get('/', [Home::class, '__invoke'])->name('home');
 Route::get('/contact', [Contact::class, '__invoke'])->name('contact');

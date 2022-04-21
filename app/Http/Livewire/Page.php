@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Page as FilamentPage;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Page as FilamentPage;
 use Livewire\Component;
 
 class Page extends Component
@@ -24,9 +24,9 @@ class Page extends Component
         $data = [
             'defaultSizes' => [
                 'width' => 735,
-                'height' => 546
+                'height' => 546,
             ],
-            'attributes' => 'width="735" height="546"'
+            'attributes' => 'width="735" height="546"',
         ];
 
         $content = $page->body;
