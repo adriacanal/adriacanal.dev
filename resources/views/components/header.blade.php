@@ -1,11 +1,10 @@
 <div x-data="{ mobileMenuOpen: false }" class="relative bg-white dark:bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center border-gray-100 py-6 md:space-x-10">
+        <div class="flex justify-between items-center border-gray-100 md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="{{ route('home') }}" title="Adrià Canal">
-                    {{--TODO: Logo work in progress, disable for the moment --}}
-                    {{--<img class="h-8 w-auto sm:h-10 inline" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">--}}
-                    <span class="text-2xl font-noto font-bold text-green-800 dark:text-green-500 align-middle">Adrià Canal</span>
+                    <img class="h-8 w-auto sm:h-10 inline dark:hidden" style="min-height: 88px;" src="{{ asset('logo/adriacanal_logo_light.png') }}" alt="Adrià Canal">
+                    <img class="h-8 w-auto sm:h-10 hidden dark:inline" style="min-height: 88px;" src="{{ asset('logo/adriacanal_logo_dark.png') }}" alt="Adrià Canal">
                 </a>
             </div>
             <div class="flex items-center justify-center space-x-2 md:order-last">
@@ -48,9 +47,8 @@
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                     <div>
-                        {{--TODO: Logo work in progress, disable for the moment --}}
-                        {{--<img class="h-8 w-auto" src="{{ asset('adriacanal_logo.png') }}" alt="Adrià Canal">--}}
-                        <span class="text-2xl font-noto font-bold text-green-800 align-middle dark:text-green-500">AC</span>
+                        <img class="h-8 w-auto inline dark:hidden" src="{{ asset('logo/adriacanal_logo_light_mobile.png') }}" alt="Adrià Canal">
+                        <img class="h-8 w-auto hidden dark:inline" src="{{ asset('logo/adriacanal_logo_dark_mobile.png') }}" alt="Adrià Canal">
                     </div>
                     <div class="-mr-2">
                         <button @click="mobileMenuOpen = false" type="button"

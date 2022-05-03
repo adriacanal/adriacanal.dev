@@ -24,29 +24,29 @@
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 dark:text-slate-300">First name</label>
                     <div class="mt-1">
-                        <input type="text" name="name" wire:model="name" id="name" autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 dark:focus:ring-green-500 dark:focus:border-green-500 border-gray-300 rounded-md">
+                        <input type="text" name="name" wire:model="name" id="name" autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-sky-800 focus:border-sky-800 dark:focus:ring-sky-500 dark:focus:border-sky-500 border-gray-300 rounded-md">
                     </div>
                 </div>
                 <div>
                     <label for="surname" class="block text-sm font-medium text-gray-700 dark:text-slate-300">Last name</label>
                     <div class="mt-1">
-                        <input type="text" name="surname" wire:model="surname" id="surname" autocomplete="surname" class="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 dark:focus:ring-green-500 dark:focus:border-green-500 border-gray-300 rounded-md">
+                        <input type="text" name="surname" wire:model="surname" id="surname" autocomplete="surname" class="py-3 px-4 block w-full shadow-sm focus:ring-sky-800 focus:border-sky-800 dark:focus:ring-sky-500 dark:focus:border-sky-500 border-gray-300 rounded-md">
                     </div>
                 </div>
                 <div class="sm:col-span-2">
                     <label for="email" class="block text-sm font-medium text-gray-700 dark:text-slate-300">Email</label>
                     <div class="mt-1">
-                        <input id="email" name="email" wire:model="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 dark:focus:ring-green-500 dark:focus:border-green-500 border-gray-300 rounded-md">
+                        <input id="email" name="email" wire:model="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-sky-800 focus:border-sky-800 dark:focus:ring-sky-500 dark:focus:border-sky-500 border-gray-300 rounded-md">
                     </div>
                 </div>
                 <div class="sm:col-span-2">
                     <label for="message" class="block text-sm font-medium text-gray-700 dark:text-slate-300">Message</label>
                     <div class="mt-1">
-                        <textarea id="message" name="message" wire:model="message" rows="4" class="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 dark:focus:ring-green-500 dark:focus:border-green-500 border border-gray-300 rounded-md"></textarea>
+                        <textarea id="message" name="message" wire:model="message" rows="4" class="py-3 px-4 block w-full shadow-sm focus:ring-sky-800 focus:border-sky-800 dark:focus:ring-sky-500 dark:focus:border-sky-500 border border-gray-300 rounded-md"></textarea>
                     </div>
                 </div>
                 <div class="sm:col-span-2">
-                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white dark:text-slate-900 bg-green-800 dark:bg-green-500 hover:bg-green-700">
+                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white dark:text-slate-900 bg-sky-800 dark:bg-sky-400 hover:bg-sky-700">
                         Let's talk
                     </button>
                 </div>
