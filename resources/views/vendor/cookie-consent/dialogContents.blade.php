@@ -7,9 +7,9 @@
                 </p>
             </div>
             <div class="mt-2 flex-shrink-0 w-full sm:mt-0 sm:w-auto">
-                <a class="js-cookie-consent-agree cookie-consent__agree cursor-pointer flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white bg-sky-800 hover:bg-sky-700">
+                <button class="js-cookie-consent-agree cookie-consent__agree cursor-pointer flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white bg-sky-800 hover:bg-sky-700">
                     {{ trans('cookie-consent::texts.agree') }}
-                </a>
+                </button>
             </div>
         </div>
     </div>
