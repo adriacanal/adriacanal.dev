@@ -3,6 +3,7 @@
         <div class="flex justify-between items-center border-gray-100 md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="{{ route('home') }}" title="Adrià Canal">
+                    @if(file_exists(public_path('storage/logo/adriacanal_logo_light.png')))
                     <x-picture
                         name="logo/adriacanal_logo_light.png"
                         :default-sizes="['width' => 376, 'height' => 176]"
@@ -12,6 +13,10 @@
                         height="176px"
                         style="min-height: 88px;"
                     />
+                    @else
+                    <img class="h-8 w-auto sm:h-10 inline dark:hidden" style="min-height: 88px;" src="{{ asset('logo/adriacanal_logo_light.png') }}" alt="Adrià Canal">
+                    @endif
+                    @if(file_exists(public_path('storage/logo/adriacanal_logo_dark.png')))
                     <x-picture
                         name="logo/adriacanal_logo_dark.png"
                         :default-sizes="['width' => 376, 'height' => 176]"
@@ -21,6 +26,9 @@
                         height="176px"
                         style="min-height: 88px;"
                     />
+                    @else
+                    <img class="h-8 w-auto sm:h-10 hidden dark:inline" style="min-height: 88px;" src="{{ asset('logo/adriacanal_logo_dark.png') }}" alt="Adrià Canal">
+                    @endif
                 </a>
             </div>
             <div class="flex items-center justify-center space-x-2 md:order-last">
@@ -63,6 +71,7 @@
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                     <div>
+                        @if(file_exists(public_path('storage/logo/adriacanal_logo_light_mobile.png')))
                         <x-picture
                             name="logo/adriacanal_logo_light_mobile.png"
                             :default-sizes="['width' => 64, 'height' => 32]"
@@ -72,6 +81,10 @@
                             height="32px"
                             loading="lazy"
                         />
+                        @else
+                        <img class="h-8 w-auto inline dark:hidden" src="{{ asset('logo/adriacanal_logo_light_mobile.png') }}" alt="Adrià Canal">
+                        @endif
+                        @if(file_exists(public_path('storage/logo/adriacanal_logo_dark_mobile.png')))
                         <x-picture
                             name="logo/adriacanal_logo_dark_mobile.png"
                             :default-sizes="['width' => 64, 'height' => 32]"
@@ -81,6 +94,9 @@
                             height="32px"
                             loading="lazy"
                         />
+                        @else
+                        <img class="h-8 w-auto hidden dark:inline" src="{{ asset('logo/adriacanal_logo_dark_mobile.png') }}" alt="Adrià Canal">
+                        @endif
                     </div>
                     <div class="-mr-2">
                         <button @click="mobileMenuOpen = false" type="button"
