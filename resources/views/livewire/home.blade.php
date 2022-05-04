@@ -1,7 +1,6 @@
 <x-slot name="title">{{ config('app.name') }}</x-slot>
 
 <div class="bg-gray-50 dark:bg-slate-800">
-    {{-- HERO: presentació + imatge --}}
     <main class="lg:relative">
         <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
             <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
@@ -58,7 +57,6 @@
         @endif
     </main>
 
-    {{-- FEATURE: curriculum --}}
     <div class="bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
             <div>

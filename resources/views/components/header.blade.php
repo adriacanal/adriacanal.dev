@@ -3,8 +3,24 @@
         <div class="flex justify-between items-center border-gray-100 md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="{{ route('home') }}" title="Adrià Canal">
-                    <img class="h-8 w-auto sm:h-10 inline dark:hidden" style="min-height: 88px;" src="{{ asset('logo/adriacanal_logo_light.png') }}" alt="Adrià Canal">
-                    <img class="h-8 w-auto sm:h-10 hidden dark:inline" style="min-height: 88px;" src="{{ asset('logo/adriacanal_logo_dark.png') }}" alt="Adrià Canal">
+                    <x-picture
+                        name="logo/adriacanal_logo_light.png"
+                        :default-sizes="['width' => 376, 'height' => 176]"
+                        alt="Adrià Canal"
+                        class="h-8 w-auto sm:h-10 inline dark:hidden"
+                        width="376px"
+                        height="176px"
+                        style="min-height: 88px;"
+                    />
+                    <x-picture
+                        name="logo/adriacanal_logo_dark.png"
+                        :default-sizes="['width' => 376, 'height' => 176]"
+                        alt="Adrià Canal"
+                        class="h-8 w-auto sm:h-10 hidden dark:inline"
+                        width="376px"
+                        height="176px"
+                        style="min-height: 88px;"
+                    />
                 </a>
             </div>
             <div class="flex items-center justify-center space-x-2 md:order-last">
@@ -47,8 +63,24 @@
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                     <div>
-                        <img class="h-8 w-auto inline dark:hidden" src="{{ asset('logo/adriacanal_logo_light_mobile.png') }}" alt="Adrià Canal">
-                        <img class="h-8 w-auto hidden dark:inline" src="{{ asset('logo/adriacanal_logo_dark_mobile.png') }}" alt="Adrià Canal">
+                        <x-picture
+                            name="logo/adriacanal_logo_light_mobile.png"
+                            :default-sizes="['width' => 64, 'height' => 32]"
+                            alt="Adrià Canal"
+                            class="h-8 w-auto inline dark:hidden"
+                            width="64px"
+                            height="32px"
+                            loading="lazy"
+                        />
+                        <x-picture
+                            name="logo/adriacanal_logo_dark_mobile.png"
+                            :default-sizes="['width' => 64, 'height' => 32]"
+                            alt="Adrià Canal"
+                            class="h-8 w-auto hidden dark:inline"
+                            width="64px"
+                            height="32px"
+                            loading="lazy"
+                        />
                     </div>
                     <div class="-mr-2">
                         <button @click="mobileMenuOpen = false" type="button"
