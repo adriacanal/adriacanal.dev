@@ -8,7 +8,7 @@ return [
         'start_url' => '/',
         'background_color' => '#ffffff',
         'theme_color' => '#ffffff',
-        'display' => 'browser',
+        'display' => 'standalone',
         'orientation'=> 'any',
         'status_bar'=> 'black',
         'icons' => [
