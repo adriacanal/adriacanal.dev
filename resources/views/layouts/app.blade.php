@@ -12,6 +12,8 @@
 
     <link rel="canonical" href="{{ url()->current() }}" />
 
+    @laravelPWA
+
     @livewireStyles
 
     {{ vite_assets() }}
