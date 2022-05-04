@@ -7,7 +7,7 @@
             <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
                 <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
                     <span class="block xl:inline">Hi</span>
-                    <span class="block text-sky-500 dark:text-sky-400 xl:inline"> everybody! 👋🏻</span>
+                    <span class="block text-sky-800 dark:text-sky-400 xl:inline"> everybody! 👋🏻</span>
                 </h1>
                 <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 dark:text-slate-400 sm:text-xl md:mt-5 md:max-w-3xl">
                     My name is Adrià Canal and I'm a Web Artisan Developer 👨🏻‍💻
@@ -62,7 +62,7 @@
     <div class="bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
             <div>
-                <h2 class="text-base font-semibold text-sky-500 dark:text-sky-400 uppercase tracking-wide">Some of my skills</h2>
+                <h2 class="text-base font-semibold text-sky-800 dark:text-sky-400 uppercase tracking-wide">Some of my skills</h2>
                 <p class="mt-2 text-3xl font-extrabold text-gray-900 dark:text-white">As a developer</p>
                 <p class="mt-4 text-lg text-gray-500 dark:text-slate-400">As a Backend developer, the programming languages, frameworks and software that I most use and that I master are:</p>
             </div>
@@ -180,7 +180,7 @@
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 <span class="block">Does your project needs some love?</span>
-                <span class="block text-sky-500 dark:text-sky-400">Get in touch with me!</span>
+                <span class="block text-sky-800 dark:text-sky-400">Get in touch with me!</span>
             </h2>
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                 <div class="inline-flex rounded-md shadow">
