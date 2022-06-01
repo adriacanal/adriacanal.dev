@@ -32,7 +32,11 @@
 @endif
 <x-header />
 
+@if (isset($slot) && $slot !== null)
 {!! $slot !!}
+@else
+@yield('content')
+@endif
 
 <x-footer />
 @livewireScripts
