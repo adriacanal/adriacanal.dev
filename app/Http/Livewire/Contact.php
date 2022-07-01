@@ -10,8 +10,11 @@ use Livewire\Component;
 class Contact extends Component
 {
     public string $name = '';
+
     public string $surname = '';
+
     public string $email = '';
+
     public string $message = '';
 
     public function submit(): void

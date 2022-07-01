@@ -14,19 +14,19 @@ return [
         'icons' => [
             '192x192' => [
                 'path' => '/images/icons/icon-192x192.png',
-                'purpose' => 'any'
+                'purpose' => 'any',
             ],
             '256x256' => [
                 'path' => '/images/icons/icon-256x256.png',
-                'purpose' => 'any'
+                'purpose' => 'any',
             ],
             '384x384' => [
                 'path' => '/images/icons/icon-384x384.png',
-                'purpose' => 'any'
+                'purpose' => 'any',
             ],
             '512x512' => [
                 'path' => '/images/icons/icon-512x512.png',
-                'purpose' => 'any maskable'
+                'purpose' => 'any maskable',
             ],
         ],
         'splash' => [
@@ -42,6 +42,6 @@ return [
             '2048x2732' => '/images/icons/splash-2048x2732.png',
         ],
         'shortcuts' => [],
-        'custom' => []
-    ]
+        'custom' => [],
+    ],
 ];

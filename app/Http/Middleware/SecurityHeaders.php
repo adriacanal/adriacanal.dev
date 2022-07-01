@@ -22,6 +22,7 @@ class SecurityHeaders
         $response->headers->set('X-Content-Type-Options', 'nosniff');
         $response->headers->set('X-XSS-Protection', '1; mode=block');
         $response->headers->set('Permissions-Policy', 'camera=(), display-capture=(), geolocation=(), microphone=()');
+
         return $response;
     }
 }

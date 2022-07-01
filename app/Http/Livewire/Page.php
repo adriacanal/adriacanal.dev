@@ -42,7 +42,7 @@ class Page extends Component
                     $data['attributes'] = 'loading="lazy" width="735" height="546"';
                 }
                 $content = preg_replace(
-                    '/<figure([\w\W]+?)src\s*=\s*"(.+?)' . $data['name'] . '"([\w\W]+?)<\/figure>/',
+                    '/<figure([\w\W]+?)src\s*=\s*"(.+?)'.$data['name'].'"([\w\W]+?)<\/figure>/',
                     view('components.picture', $data)->render(),
                     $content
                 );

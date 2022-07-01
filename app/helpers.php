@@ -21,7 +21,7 @@ if (! function_exists('vite')) {
         }
 
         if ($devServerIsRunning) {
-            return new HtmlString(<<<HTML
+            return new HtmlString(<<<'HTML'
                 <script type="module" src="https://localhost:3000/@vite/client"></script>
                 <script type="module" src="https://localhost:3000/resources/js/app.js"></script>
             HTML);

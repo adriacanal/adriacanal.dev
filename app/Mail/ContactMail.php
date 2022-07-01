@@ -12,7 +12,7 @@ class ContactMail extends Mailable
 
     public function build(): ContactMail
     {
-        return $this->subject("📬 {$this->name} {$this->surname} is contacting through " . config('web.domain'))
+        return $this->subject("📬 {$this->name} {$this->surname} is contacting through ".config('web.domain'))
             ->markdown('emails.contact', [
                 'name' => $this->name,
                 'surname' => $this->surname,
