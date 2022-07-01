@@ -4,17 +4,17 @@ use GNAHotelSolutions\ImageCacher\Adapters\Laravel\Facades\ImageCacher;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\HtmlString;
 
-if (! function_exists('vite_assets')) {
+if (! function_exists('vite')) {
     /**
      * @throws JsonException
      */
-    function vite_assets(): HtmlString
+    function vite(): HtmlString
     {
         $devServerIsRunning = false;
 
         if (app()->environment('local')) {
             try {
-                Http::get('http://localhost:3000');
+                Http::get('https://localhost:3000');
                 $devServerIsRunning = true;
             } catch (Exception) {
             }
@@ -22,8 +22,8 @@ if (! function_exists('vite_assets')) {
 
         if ($devServerIsRunning) {
             return new HtmlString(<<<HTML
-                <script type="module" src="http://localhost:3000/@vite/client"></script>
-                <script type="module" src="http://localhost:3000/resources/js/app.js"></script>
+                <script type="module" src="https://localhost:3000/@vite/client"></script>
+                <script type="module" src="https://localhost:3000/resources/js/app.js"></script>
             HTML);
         }
 

@@ -16,7 +16,7 @@
 
     @livewireStyles
 
-    {{ vite_assets() }}
+    @vite
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

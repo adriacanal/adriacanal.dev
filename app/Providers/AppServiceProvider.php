@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Blade;
 use Config;
 use Illuminate\Support\ServiceProvider;
 use Request;
@@ -41,5 +42,9 @@ class AppServiceProvider extends ServiceProvider
                 Config::set('session.secure', true);
             }
         }
+
+        Blade::directive('vite', function () {
+            return vite();
+        });
     }
 }
