@@ -1,6 +1,9 @@
-export default ({ command }) => ({
-    base: command === 'serve' ? '' : '/build/',
-    publicDir: 'fake_dir_so_nothing_gets_copied',
+import { defineConfig } from "vite";
+
+export default defineConfig => ({
+    server: {
+        https: true,
+    },
     build: {
         manifest: true,
         outDir: 'public/build',

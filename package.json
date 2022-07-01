@@ -14,13 +14,13 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "production": "vite build"
+        "build": "vite build"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.4.0",
         "@tailwindcss/typography": "^0.5.1",
         "alpinejs": "^3.9.0",
-        "autoprefixer": "^10.4.2",
+        "autoprefixer": "10.4.5",
         "axios": "^0.25",
         "cssnano": "^5.0.17",
         "lodash": "^4.17.19",
