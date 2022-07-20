@@ -16,7 +16,6 @@
         "livewire/livewire": "^2.10",
         "sentry/sentry-laravel": "^2.11",
         "silviolleite/laravelpwa": "^2.0",
-        "spatie/laravel-cookie-consent": "^3.2",
         "spatie/laravel-honeypot": "^4.1"
     },
     "require-dev": {
