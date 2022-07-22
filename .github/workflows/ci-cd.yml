@@ -89,7 +89,7 @@ jobs:
         uses: AEnterprise/rsync-deploy@v1.0
         env:
           DEPLOY_KEY: ${{ secrets.PRIVATE_KEY }}
-          ARGS: '-avz --no-o --no-g --no-perms --exclude=".*"'
+          ARGS: '-avz --no-o --no-g --no-perms -O --exclude=".*"'
           SERVER_PORT: ${{ secrets.PORT }}
           FOLDER: "./"
           SERVER_IP: ${{ secrets.TARGET_HOST }}
