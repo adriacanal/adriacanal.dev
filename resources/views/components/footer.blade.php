@@ -29,10 +29,6 @@
                 <a href="{{ route('page', 'privacy-policy') }}" title="Privacy Policy" class="text-base text-gray-500 hover:text-sky-800 dark:text-slate-400 dark:hover:text-sky-400">
                     Privacy Policy
                 </a>
-                |
-                <a href="{{ route('page', 'cookies') }}" title="Cookies" class="text-base text-gray-500 hover:text-sky-800 dark:text-slate-400 dark:hover:text-sky-400">
-                    Cookies
-                </a>
             </p>
         </div>
     </div>
