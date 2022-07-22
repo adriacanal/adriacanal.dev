@@ -42,6 +42,12 @@
         </div>
         <div class="mt-6 prose prose-green prose-lg dark:prose-invert text-gray-500 dark:text-slate-400 mx-auto">
             {!! $content !!}
+
+        @if ($page->id === 3)
+            <iframe style="border: 0; height: 200px; width: 600px;"
+                src="https://matomo.adriacanal.dev/index.php?module=CoreAdminHome&action=optOut&language=en&fontColor=6b7280&fontSize=1.125rem&fontFamily=ui-sans-serif"
+            ></iframe>
+        @endif
         </div>
     </div>
 </div>
